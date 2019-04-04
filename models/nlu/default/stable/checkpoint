@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\Prajwal SV\\Documents\\Wisdom NLP\\./models/nlu\\default\\stable\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\Prajwal SV\\Documents\\Wisdom NLP\\./models/nlu\\default\\stable\\intent_classifier_tensorflow_embedding.ckpt"

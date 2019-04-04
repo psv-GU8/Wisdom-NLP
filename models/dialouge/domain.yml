@@ -1,0 +1,188 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_unclear
+- utter_goodbye
+config:
+  store_entities_as_slots: true
+entities: []
+forms: []
+intents:
+- greet:
+    use_entities: true
+- restaurant_search:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- introduction:
+    use_entities: true
+- age:
+    use_entities: true
+- annoying:
+    use_entities: true
+- answer_question:
+    use_entities: true
+- unhelpful:
+    use_entities: true
+- smart:
+    use_entities: true
+- beautiful:
+    use_entities: true
+- birthday:
+    use_entities: true
+- boring:
+    use_entities: true
+- boss:
+    use_entities: true
+- busy:
+    use_entities: true
+- help:
+    use_entities: true
+- chatbot:
+    use_entities: true
+- crazy:
+    use_entities: true
+- fired:
+    use_entities: true
+- funny:
+    use_entities: true
+- good:
+    use_entities: true
+- agent_happy:
+    use_entities: true
+- hobby:
+    use_entities: true
+- hungry:
+    use_entities: true
+- marry:
+    use_entities: true
+- friend:
+    use_entities: true
+- occupation:
+    use_entities: true
+- origin:
+    use_entities: true
+- ready:
+    use_entities: true
+- real:
+    use_entities: true
+- residence:
+    use_entities: true
+- are_you_sure:
+    use_entities: true
+- talk:
+    use_entities: true
+- bad:
+    use_entities: true
+- no_problem:
+    use_entities: true
+- thanks:
+    use_entities: true
+- welcome:
+    use_entities: true
+- well_done:
+    use_entities: true
+- wait:
+    use_entities: true
+- hug:
+    use_entities: true
+- dont_care:
+    use_entities: true
+- sorry:
+    use_entities: true
+- what_you_mean:
+    use_entities: true
+- wrong:
+    use_entities: true
+- ha_ha:
+    use_entities: true
+- wow:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- goodevening:
+    use_entities: true
+- goodmorning:
+    use_entities: true
+- goodnight:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- nice_to_meet:
+    use_entities: true
+- nice_to_see:
+    use_entities: true
+- nice_to_talk:
+    use_entities: true
+- whatsup:
+    use_entities: true
+- angry:
+    use_entities: true
+- back:
+    use_entities: true
+- bored:
+    use_entities: true
+- cant_sleep:
+    use_entities: true
+- wanna_talk:
+    use_entities: true
+- excited:
+    use_entities: true
+- go_to_bed:
+    use_entities: true
+- doing_well:
+    use_entities: true
+- happy:
+    use_entities: true
+- my_birthday:
+    use_entities: true
+- user_here:
+    use_entities: true
+- user_joking:
+    use_entities: true
+- like_agent:
+    use_entities: true
+- user_lonely:
+    use_entities: true
+- user_looks_like:
+    use_entities: true
+- love:
+    use_entities: true
+- miss_you:
+    use_entities: true
+- advice:
+    use_entities: true
+- user_sad:
+    use_entities: true
+- user_sleepy:
+    use_entities: true
+- testing_agent:
+    use_entities: true
+- user_tired:
+    use_entities: true
+- user_waiting:
+    use_entities: true
+- see_again:
+    use_entities: true
+- lets_talk:
+    use_entities: true
+- be_back:
+    use_entities: true
+slots: {}
+templates:
+  utter_goodbye:
+  - text: Bye :(
+  - text: Good Bye :(
+  - text: Bye, Miss you !!!
+  - text: Bye, have a great time :)
+  - text: Farewell my friend.....
+  - text: Bubye :P
+  utter_greet:
+  - text: hey ! How are you ?
+  - text: Well, hi there!
+  - text: Hello !!! , Am i too loud ?
+  - text: Howdy !
+  - text: Hey, Wassup ?
+  utter_unclear:
+  - text: What are you trying to say ?

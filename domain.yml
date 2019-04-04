@@ -1,0 +1,118 @@
+intents:
+- greet
+- restaurant_search
+- thankyou
+- introduction
+- age
+- annoying
+- answer_question
+- unhelpful
+- smart
+- beautiful
+- birthday
+- boring
+- boss
+- busy
+- help
+- chatbot
+- smart
+- crazy
+- fired
+- funny
+- good
+- agent_happy
+- hobby
+- hungry
+- marry
+- friend
+- occupation
+- origin
+- ready
+- real
+- residence
+- are_you_sure
+- talk
+- bad
+- good
+- no_problem
+- thanks
+- welcome
+- well_done
+- wait
+- hug
+- dont_care
+- sorry
+- what_you_mean
+- wrong
+- ha_ha
+- wow
+- goodbye
+- goodevening
+- goodmorning
+- goodnight
+- how_are_you
+- nice_to_meet
+- nice_to_see
+- nice_to_talk
+- whatsup
+- angry
+- back
+- bored
+- busy
+- cant_sleep
+- wanna_talk
+- excited
+- go_to_bed
+- doing_well
+- happy
+- my_birthday
+- user_here
+- user_joking
+- like_agent
+- user_lonely
+- user_looks_like
+- love
+- miss_you
+- advice
+- user_sad
+- user_sleepy
+- testing_agent
+- user_tired
+- user_waiting
+- see_again
+- lets_talk
+- be_back
+
+
+slots:
+  location:
+    type: text
+  name:
+    type: text
+
+entities:
+ - location
+ - name
+
+actions:
+- utter_greet
+- utter_unclear
+- utter_goodbye
+- action_greet_based_on_time
+
+templates:
+  utter_greet:
+  - "hey ! How are you ?"
+  - "Well, hi there!"
+  - "HELLOOOOOOOO....!!! , was i too loud ?"
+  - "Howdy !"
+  - "Hey, Wassup ?"
+  utter_goodbye:
+  - "Bye :("
+  - "Good Bye :("
+  - "Bye, Miss you !!!"
+  - "Bye, have a great time :)"
+  - "Farewell my friend....."
+  - "Bubye :P" 
+  utter_unclear:
+  - "What are you trying to say ?"
