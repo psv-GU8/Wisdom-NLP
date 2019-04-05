@@ -82,13 +82,14 @@ intents:
 - see_again
 - lets_talk
 - be_back
-
+- joke
 
 slots:
   location:
     type: text
   name:
     type: text
+    initial_value: "human"
 
 entities:
  - location
@@ -98,7 +99,9 @@ actions:
 - utter_greet
 - utter_unclear
 - utter_goodbye
-- action_greet_based_on_time
+#- action_greet_based_on_time
+- utter_searching_joke
+- action_joke
 
 templates:
   utter_greet:
@@ -107,6 +110,7 @@ templates:
   - "HELLOOOOOOOO....!!! , was i too loud ?"
   - "Howdy !"
   - "Hey, Wassup ?"
+
   utter_goodbye:
   - "Bye :("
   - "Good Bye :("
@@ -114,5 +118,9 @@ templates:
   - "Bye, have a great time :)"
   - "Farewell my friend....."
   - "Bubye :P" 
+
+  utter_searching_joke:
+  - "Wait let me think ...... um..... here you go......"
+
   utter_unclear:
   - "What are you trying to say ?"

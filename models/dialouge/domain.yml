@@ -4,9 +4,13 @@ actions:
 - utter_greet
 - utter_unclear
 - utter_goodbye
+- utter_searching_joke
+- action_joke
 config:
   store_entities_as_slots: true
-entities: []
+entities:
+- location
+- name
 forms: []
 intents:
 - greet:
@@ -169,7 +173,17 @@ intents:
     use_entities: true
 - be_back:
     use_entities: true
-slots: {}
+- joke:
+    use_entities: true
+slots:
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  name:
+    auto_fill: true
+    initial_value: human
+    type: rasa_core.slots.TextSlot
 templates:
   utter_goodbye:
   - text: Bye :(
@@ -181,8 +195,10 @@ templates:
   utter_greet:
   - text: hey ! How are you ?
   - text: Well, hi there!
-  - text: Hello !!! , Am i too loud ?
+  - text: HELLOOOOOOOO....!!! , was i too loud ?
   - text: Howdy !
   - text: Hey, Wassup ?
+  utter_searching_joke:
+  - text: Wait let me think ...... um..... here you go......
   utter_unclear:
   - text: What are you trying to say ?
